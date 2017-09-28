@@ -3,8 +3,8 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.tauneutrin0</groupId>
-  <artifactId>euphoria-announcerbot</artifactId>
-  <version>1.1</version>
+  <artifactId>euphoria-ToolBox</artifactId>
+  <version>0.1</version>
   <packaging>jar</packaging>
   <build>
   	 <plugins>
@@ -15,7 +15,7 @@
         <configuration>
           <transformers>
             <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-              <mainClass>StructuredBot</mainClass>
+              <mainClass>bots.ToolBox</mainClass>
             </transformer>
           </transformers>
         </configuration>
@@ -40,7 +40,12 @@
     <dependency>
 	    <groupId>com.github.TauNeutrin0</groupId>
 	    <artifactId>euphoria-java</artifactId>
-	    <version>v1.3-beta</version>
+	    <version>v1.5-beta</version>
 	</dependency>
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.5</version>
+    </dependency>
   </dependencies>
 </project>
